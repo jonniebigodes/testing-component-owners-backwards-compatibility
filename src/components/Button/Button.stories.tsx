@@ -30,6 +30,13 @@ const meta = {
   args: {
     onClick: fn(),
   },
+  decorators: [
+    (Story) => (
+      <div style={{ border: "5px solid pink", padding: "16px" }}>
+        <Story />
+      </div>
+    ),
+  ],
 } satisfies Meta<typeof Button>;
 
 export default meta;
